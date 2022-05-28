@@ -23,16 +23,47 @@
             <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
                 <section role="region" aria-labelledby="student-info">
                     <h2 class="student-info">Student Info</h2>
+                    <div>
+                        <label for="student-name">Name:</label>
+                        <input id="student-name" type="text" name="student-name" />
+                    </div>
+                    <div>
+                        <label for="student-email">Email:</label>
+                        <input id="student-email" type="email" name="student-email" />
+                    </div>
+                    <div>
+                        <label for="birth-date">D.O.B:<span class="sr-only">(Date of Birth)</span></label>
+                        <input id="birth-date" type="date" name="birth-date" />
+                    </div>
                 </section>
                 <section role="region" aria-labelledby="html-questions">
-                    <h2 class="html-questions">HTML Questions</h2>
+                    <h2 class="html-questions">HTML</h2>
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question">
+                            <legend>The legend element represents a caption for the content of its
+                                parent fieldset element</legend>
+                            <ul class="answers-list">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <p>2</p>
+                        <fieldset class="question">
+                            <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+                            <ul class="answers-list">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </fieldset>
+                    </div>
                 </section>
                 <section role="region" aria-labelledby="css-questions">
-                    <h2 class="css-questions">CSS Questions</h2>
+                    <h2 class="css-questions">CSS</h2>
                 </section>
             </form>
         </main>
-        <form action="">
-        </form>
     </body>
 </html>
